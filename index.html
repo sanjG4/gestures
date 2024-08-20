@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <title>Gesture Interactions - A-Frame & AR.js</title>
@@ -21,9 +22,9 @@
     >
       <a-assets>
         <a-asset-item
-          id="pikachu"
-          src="https://sketchfab.com/nasirmoore20222007?utm_medium=embed&utm_campaign=share-popup&utm_content=759179a27eeb44528c68a0e240fa2527"
-        ></a-asset-item>
+          id="bowser"
+          src="https://cdn.glitch.com/06bd98b4-97ee-4c07-a546-fe39ca205034%2Fbowser.glb"
+         </a-asset-item>
       </a-assets>
 
       <a-marker
@@ -33,17 +34,20 @@
         cursor="fuse: false; rayOrigin: mouse;"
         id="markerA"
       >
-        <a-entity
-          id="pikachu-model"
-          gltf-model="#pikachu"
+       <a-entity
+          id="bowser-model"
+          gltf-model="#bowser"
           position="0 0 0"
           scale="0.05 0.05 0.05"
           class="clickable"
           gesture-handler
         >
         </a-entity>
+       
+       
+        
+        
       </a-marker>
-
       <a-entity camera></a-entity>
     </a-scene>
   </body>
